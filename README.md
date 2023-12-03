@@ -1,52 +1,62 @@
 # Project Name
-> Outline a brief description of your project.
+> This project is an Exploratory Data Analysis of the Lending Card Case Study.
+> The Aim of the project is to explore data using Python, and figure co-relations of different parameters
+
+> Business Challenge : Lending loans to ‘risky’ applicants is the largest source of financial loss (called credit loss). Credit loss is the amount of money lost by the lender when the borrower refuses to pay or runs away with the money owed. In other words, borrowers who default cause the largest amount of loss to the lenders. Identify these risky loan applicants, then such loans can be reduced thereby cutting down the amount of credit loss. Understand the driving factors (or driver variables) behind loan default, i.e. the variables which are strong indicators of default
 
 
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+## Approach for the Analysis
+* Research on the Lending Domain, Understand Business challenges. Read Research Papers which show co-relations for similar businesses. 
+* Initial Analysis using Excel Pivots and Graphs to make sense of data. 
+* Expore data using Python, Visuazlize
+* Create Insights from data.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Key Patterns for Loan Default Identification - Based on Finance Industry Whitepapers.
+- Credit History and Scores: Analyze borrowers' past credit behavior and scores. e.g. FICO
+- Income Stability: Assess the stability and adequacy of the borrower's income.
+- Debt-to-Income Ratios: Evaluate borrowers' existing debts against their income.
+- Employment History: Consider the consistency and length of employment.
+- Age and Demographics: Understand the risk profile based on age group and other demographic factors.
+- Loan Purpose and Amount: Scrutinize the purpose of the loan and the amount requested.
+- Current Financial Behavior: Monitor current spending patterns and financial commitments.
+- Homeownership: Owning a home, particularly with a mortgage, can correlate with lower expected loss.
+- Loan Purpose: Different loan purposes exhibit varying levels of risk.
+  
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- People with longer employment length & Average Loan Amount seem to have more Charge off.
+- People with employment length >10 years (and less than a year) have higher count/instances of Charge off.
+- Average Annual Income is co-related to defaults. Lower average income has more defaults.
+- High debt to income ratio shows a strong correlation to defaults.
+- Loan Purpose of Debt_Consolidation, credit_card payments and Small_business have most defaults.
+- There seems to be a correlation between the fields loan_amount, annual_inc, Dti, Months_since_last_record. These may be able to provide early insights into upcoming default.
+- The Box Plot shows that the Average Loan Size for Charged Off segment is Higher than Fully Paid. This also leads to the insight that the Current average is much higher, which could point to upcoming loan defaults, and the company should proactively work on working with those customers and monitor the triger signals better.
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Python version: 3.10.12 
+- Pandas version: 2.1.3
+- Matplotlib version: 3.8.1
+- Seaborn version: 0.13.0
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- References :
+* Commercial Banks and Consumer Instalment Credit . John M. Chapman NBER 
+https://www.nber.org/system/files/chapters/c4732/c4732.pdf
+
+* Credit Risk Management of Consumer Finance Based on Big Data
+https://downloads.hindawi.com/journals/misy/2021/8189255.pdf
+
+* Investigation on Consumer Finance Risk Management – Case Study
+https://www.atlantis-press.com/article/125908355.pdf
+
+* Drivers of Performance in Unsecured Personal Loans
+https://hl.com/media/rn2hx2od/drivers-of-performance-in-unsecured-personal-loans.pdf
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
+Created by [@vijay-khanna] - feel free to contact me!
 
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
